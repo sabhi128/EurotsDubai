@@ -1,6 +1,8 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import "@fontsource-variable/urbanist";
+@import "@fontsource-variable/epilogue";
 
 @custom-variant dark (&:is(.dark *));
 
