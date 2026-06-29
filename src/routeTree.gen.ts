@@ -9,38 +9,298 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CompareRouteImport } from './routes/compare'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesPoolsRouteImport } from './routes/services.pools'
+import { Route as ServicesPlumbingRouteImport } from './routes/services.plumbing'
+import { Route as ServicesPaintingRouteImport } from './routes/services.painting'
+import { Route as ServicesHandymanRouteImport } from './routes/services.handyman'
+import { Route as ServicesElectricalRouteImport } from './routes/services.electrical'
+import { Route as ServicesDrainageRouteImport } from './routes/services.drainage'
+import { Route as ServicesCarpentryRouteImport } from './routes/services.carpentry'
+import { Route as ServicesAcRouteImport } from './routes/services.ac'
+import { Route as AnnualContractResidentialRouteImport } from './routes/annual-contract.residential'
+import { Route as AnnualContractCommercialRouteImport } from './routes/annual-contract.commercial'
+import { Route as AboutTeamRouteImport } from './routes/about.team'
+import { Route as AboutCareersRouteImport } from './routes/about.careers'
 
+const TestimonialsRoute = TestimonialsRouteImport.update({
+  id: '/testimonials',
+  path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareRoute = CompareRouteImport.update({
+  id: '/compare',
+  path: '/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesPoolsRoute = ServicesPoolsRouteImport.update({
+  id: '/services/pools',
+  path: '/services/pools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesPlumbingRoute = ServicesPlumbingRouteImport.update({
+  id: '/services/plumbing',
+  path: '/services/plumbing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesPaintingRoute = ServicesPaintingRouteImport.update({
+  id: '/services/painting',
+  path: '/services/painting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesHandymanRoute = ServicesHandymanRouteImport.update({
+  id: '/services/handyman',
+  path: '/services/handyman',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesElectricalRoute = ServicesElectricalRouteImport.update({
+  id: '/services/electrical',
+  path: '/services/electrical',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesDrainageRoute = ServicesDrainageRouteImport.update({
+  id: '/services/drainage',
+  path: '/services/drainage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesCarpentryRoute = ServicesCarpentryRouteImport.update({
+  id: '/services/carpentry',
+  path: '/services/carpentry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesAcRoute = ServicesAcRouteImport.update({
+  id: '/services/ac',
+  path: '/services/ac',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnnualContractResidentialRoute =
+  AnnualContractResidentialRouteImport.update({
+    id: '/annual-contract/residential',
+    path: '/annual-contract/residential',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AnnualContractCommercialRoute =
+  AnnualContractCommercialRouteImport.update({
+    id: '/annual-contract/commercial',
+    path: '/annual-contract/commercial',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AboutTeamRoute = AboutTeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => AboutRoute,
+} as any)
+const AboutCareersRoute = AboutCareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => AboutRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRouteWithChildren
+  '/compare': typeof CompareRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/about/careers': typeof AboutCareersRoute
+  '/about/team': typeof AboutTeamRoute
+  '/annual-contract/commercial': typeof AnnualContractCommercialRoute
+  '/annual-contract/residential': typeof AnnualContractResidentialRoute
+  '/services/ac': typeof ServicesAcRoute
+  '/services/carpentry': typeof ServicesCarpentryRoute
+  '/services/drainage': typeof ServicesDrainageRoute
+  '/services/electrical': typeof ServicesElectricalRoute
+  '/services/handyman': typeof ServicesHandymanRoute
+  '/services/painting': typeof ServicesPaintingRoute
+  '/services/plumbing': typeof ServicesPlumbingRoute
+  '/services/pools': typeof ServicesPoolsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRouteWithChildren
+  '/compare': typeof CompareRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/about/careers': typeof AboutCareersRoute
+  '/about/team': typeof AboutTeamRoute
+  '/annual-contract/commercial': typeof AnnualContractCommercialRoute
+  '/annual-contract/residential': typeof AnnualContractResidentialRoute
+  '/services/ac': typeof ServicesAcRoute
+  '/services/carpentry': typeof ServicesCarpentryRoute
+  '/services/drainage': typeof ServicesDrainageRoute
+  '/services/electrical': typeof ServicesElectricalRoute
+  '/services/handyman': typeof ServicesHandymanRoute
+  '/services/painting': typeof ServicesPaintingRoute
+  '/services/plumbing': typeof ServicesPlumbingRoute
+  '/services/pools': typeof ServicesPoolsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRouteWithChildren
+  '/compare': typeof CompareRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/about/careers': typeof AboutCareersRoute
+  '/about/team': typeof AboutTeamRoute
+  '/annual-contract/commercial': typeof AnnualContractCommercialRoute
+  '/annual-contract/residential': typeof AnnualContractResidentialRoute
+  '/services/ac': typeof ServicesAcRoute
+  '/services/carpentry': typeof ServicesCarpentryRoute
+  '/services/drainage': typeof ServicesDrainageRoute
+  '/services/electrical': typeof ServicesElectricalRoute
+  '/services/handyman': typeof ServicesHandymanRoute
+  '/services/painting': typeof ServicesPaintingRoute
+  '/services/plumbing': typeof ServicesPlumbingRoute
+  '/services/pools': typeof ServicesPoolsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/compare'
+    | '/contact'
+    | '/faq'
+    | '/testimonials'
+    | '/about/careers'
+    | '/about/team'
+    | '/annual-contract/commercial'
+    | '/annual-contract/residential'
+    | '/services/ac'
+    | '/services/carpentry'
+    | '/services/drainage'
+    | '/services/electrical'
+    | '/services/handyman'
+    | '/services/painting'
+    | '/services/plumbing'
+    | '/services/pools'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/compare'
+    | '/contact'
+    | '/faq'
+    | '/testimonials'
+    | '/about/careers'
+    | '/about/team'
+    | '/annual-contract/commercial'
+    | '/annual-contract/residential'
+    | '/services/ac'
+    | '/services/carpentry'
+    | '/services/drainage'
+    | '/services/electrical'
+    | '/services/handyman'
+    | '/services/painting'
+    | '/services/plumbing'
+    | '/services/pools'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/compare'
+    | '/contact'
+    | '/faq'
+    | '/testimonials'
+    | '/about/careers'
+    | '/about/team'
+    | '/annual-contract/commercial'
+    | '/annual-contract/residential'
+    | '/services/ac'
+    | '/services/carpentry'
+    | '/services/drainage'
+    | '/services/electrical'
+    | '/services/handyman'
+    | '/services/painting'
+    | '/services/plumbing'
+    | '/services/pools'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRouteWithChildren
+  CompareRoute: typeof CompareRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  TestimonialsRoute: typeof TestimonialsRoute
+  AnnualContractCommercialRoute: typeof AnnualContractCommercialRoute
+  AnnualContractResidentialRoute: typeof AnnualContractResidentialRoute
+  ServicesAcRoute: typeof ServicesAcRoute
+  ServicesCarpentryRoute: typeof ServicesCarpentryRoute
+  ServicesDrainageRoute: typeof ServicesDrainageRoute
+  ServicesElectricalRoute: typeof ServicesElectricalRoute
+  ServicesHandymanRoute: typeof ServicesHandymanRoute
+  ServicesPaintingRoute: typeof ServicesPaintingRoute
+  ServicesPlumbingRoute: typeof ServicesPlumbingRoute
+  ServicesPoolsRoute: typeof ServicesPoolsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/testimonials': {
+      id: '/testimonials'
+      path: '/testimonials'
+      fullPath: '/testimonials'
+      preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare': {
+      id: '/compare'
+      path: '/compare'
+      fullPath: '/compare'
+      preLoaderRoute: typeof CompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +308,123 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/pools': {
+      id: '/services/pools'
+      path: '/services/pools'
+      fullPath: '/services/pools'
+      preLoaderRoute: typeof ServicesPoolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/plumbing': {
+      id: '/services/plumbing'
+      path: '/services/plumbing'
+      fullPath: '/services/plumbing'
+      preLoaderRoute: typeof ServicesPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/painting': {
+      id: '/services/painting'
+      path: '/services/painting'
+      fullPath: '/services/painting'
+      preLoaderRoute: typeof ServicesPaintingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/handyman': {
+      id: '/services/handyman'
+      path: '/services/handyman'
+      fullPath: '/services/handyman'
+      preLoaderRoute: typeof ServicesHandymanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/electrical': {
+      id: '/services/electrical'
+      path: '/services/electrical'
+      fullPath: '/services/electrical'
+      preLoaderRoute: typeof ServicesElectricalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/drainage': {
+      id: '/services/drainage'
+      path: '/services/drainage'
+      fullPath: '/services/drainage'
+      preLoaderRoute: typeof ServicesDrainageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/carpentry': {
+      id: '/services/carpentry'
+      path: '/services/carpentry'
+      fullPath: '/services/carpentry'
+      preLoaderRoute: typeof ServicesCarpentryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/ac': {
+      id: '/services/ac'
+      path: '/services/ac'
+      fullPath: '/services/ac'
+      preLoaderRoute: typeof ServicesAcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/annual-contract/residential': {
+      id: '/annual-contract/residential'
+      path: '/annual-contract/residential'
+      fullPath: '/annual-contract/residential'
+      preLoaderRoute: typeof AnnualContractResidentialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/annual-contract/commercial': {
+      id: '/annual-contract/commercial'
+      path: '/annual-contract/commercial'
+      fullPath: '/annual-contract/commercial'
+      preLoaderRoute: typeof AnnualContractCommercialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about/team': {
+      id: '/about/team'
+      path: '/team'
+      fullPath: '/about/team'
+      preLoaderRoute: typeof AboutTeamRouteImport
+      parentRoute: typeof AboutRoute
+    }
+    '/about/careers': {
+      id: '/about/careers'
+      path: '/careers'
+      fullPath: '/about/careers'
+      preLoaderRoute: typeof AboutCareersRouteImport
+      parentRoute: typeof AboutRoute
+    }
   }
 }
 
+interface AboutRouteChildren {
+  AboutCareersRoute: typeof AboutCareersRoute
+  AboutTeamRoute: typeof AboutTeamRoute
+}
+
+const AboutRouteChildren: AboutRouteChildren = {
+  AboutCareersRoute: AboutCareersRoute,
+  AboutTeamRoute: AboutTeamRoute,
+}
+
+const AboutRouteWithChildren = AboutRoute._addFileChildren(AboutRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRouteWithChildren,
+  CompareRoute: CompareRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  TestimonialsRoute: TestimonialsRoute,
+  AnnualContractCommercialRoute: AnnualContractCommercialRoute,
+  AnnualContractResidentialRoute: AnnualContractResidentialRoute,
+  ServicesAcRoute: ServicesAcRoute,
+  ServicesCarpentryRoute: ServicesCarpentryRoute,
+  ServicesDrainageRoute: ServicesDrainageRoute,
+  ServicesElectricalRoute: ServicesElectricalRoute,
+  ServicesHandymanRoute: ServicesHandymanRoute,
+  ServicesPaintingRoute: ServicesPaintingRoute,
+  ServicesPlumbingRoute: ServicesPlumbingRoute,
+  ServicesPoolsRoute: ServicesPoolsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

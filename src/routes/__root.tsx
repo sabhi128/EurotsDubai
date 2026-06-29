@@ -11,6 +11,9 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Header } from "@/components/site/Header";
+import { Footer } from "@/components/site/Footer";
+import { SmoothScroll } from "@/components/ui/SmoothScroll";
 
 function NotFoundComponent() {
   return (
@@ -77,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "We Will Fix It · Dubai's Most Trusted Home Maintenance" },
+      { name: "description", content: "Dubai's largest independent home maintenance company since 2008. AC, electrical, plumbing, handyman, carpentry, drainage, painting, pools & waterproofing." },
+      { name: "author", content: "We Will Fix It" },
+      { property: "og:title", content: "We Will Fix It · Dubai Home Maintenance" },
+      { property: "og:description", content: "One call. One team. Every fix in your Dubai home — done first time, with warranty in writing." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@WeWillFixIt" },
     ],
     links: [
       {
@@ -118,8 +121,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <SmoothScroll />
+      <Header />
+      <main className="min-h-screen">
+        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+        <Outlet />
+      </main>
+      <Footer />
     </QueryClientProvider>
   );
 }
