@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook, Linkedin } from "lucide-react";
 import { services } from "@/lib/services";
+import { site } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -53,17 +54,20 @@ export function Footer() {
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-gold">Reach Us</div>
             <ul className="mt-5 space-y-3 text-sm">
-              <li className="flex items-start gap-3"><Phone className="size-4 mt-0.5 text-gold" /><a href="tel:+97144471444">+971 4 447 1444</a></li>
-              <li className="flex items-start gap-3"><Mail className="size-4 mt-0.5 text-gold" /><a href="mailto:hello@wewillfixit.com">hello@wewillfixit.com</a></li>
-              <li className="flex items-start gap-3"><MapPin className="size-4 mt-0.5 text-gold" /><span>Al Quoz Industrial Area<br />Dubai, UAE</span></li>
+              <li className="flex items-start gap-3"><Phone className="size-4 mt-0.5 text-gold" /><a href={site.phoneHref} className="hover:text-gold transition-colors">{site.phoneDisplay}</a></li>
+              <li className="flex items-start gap-3"><Phone className="size-4 mt-0.5 text-gold" /><a href={site.freephoneHref} className="hover:text-gold transition-colors">{site.freephoneDisplay}</a></li>
+              <li className="flex items-start gap-3"><MessageCircle className="size-4 mt-0.5 text-gold" /><a href={site.whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">{site.whatsappDisplay}</a></li>
+              <li className="flex items-start gap-3"><Mail className="size-4 mt-0.5 text-gold" /><a href={site.emailHref} className="hover:text-gold transition-colors">{site.email}</a></li>
+              <li className="flex items-start gap-3"><MapPin className="size-4 mt-0.5 text-gold" /><span>{site.address.line1}<br />{site.address.line2}</span></li>
             </ul>
+            <div className="mt-5 text-[11px] uppercase tracking-[0.25em] text-gold/80">Customer call centre · Open 24 hrs</div>
           </div>
         </div>
 
         <div className="mt-16 gold-rule" />
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-xs text-cream/55">
-          <span>© {new Date().getFullYear()} We Will Fix It. All rights reserved.</span>
-          <span>Dubai's independent maintenance company since 2008.</span>
+          <span>© {new Date().getFullYear()} {site.legalName}. All rights reserved.</span>
+          <span>Dubai's largest independent maintenance company · Established 2008.</span>
         </div>
       </div>
     </footer>
