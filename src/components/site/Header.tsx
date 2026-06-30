@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
 import { services } from "@/lib/services";
+import { site } from "@/lib/site";
 
 const navServiceLinks = services.map((s) => ({
   to: `/services/${s.slug}` as const,
@@ -94,11 +95,11 @@ export function Header() {
 
           <div className="flex items-center gap-3">
             <a
-              href="tel:+97144471444"
+              href={site.phoneHref}
               className="hidden items-center gap-2 rounded-full border border-gold/40 px-4 py-2 text-xs uppercase tracking-wide text-cream hover:bg-gold hover:text-ink transition-colors md:inline-flex"
             >
               <Phone className="size-3.5" />
-              Book Now
+              {site.phoneDisplay}
             </a>
             <button
               aria-label="Menu"
