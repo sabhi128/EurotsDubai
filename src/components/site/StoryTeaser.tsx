@@ -17,7 +17,7 @@ export function StoryTeaser() {
           <Reveal delay={0.1}>
             <p>
               British expats <strong className="text-emerald-deep">Colin Thomas</strong> and{" "}
-              <strong className="text-emerald-deep">Dan Garner</strong> started We Will Fix It in 2008, when they realised
+              <strong className="text-emerald-deep">Dan Garner</strong> started Eurots Dubai in 2008, when they realised
               Dubai residents were looking for excellent quality workmanship, cost-efficiency and a simple, professional
               booking process for home maintenance services.
             </p>

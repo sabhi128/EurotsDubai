@@ -7,7 +7,7 @@ import { BookingForm } from "@/components/site/BookingForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact · We Will Fix It Dubai" },
+      { title: "Contact · Eurots Dubai Dubai" },
       { name: "description", content: "Speak to a team lead, book a service, or request a callback. 24-hour customer call centre." },
     ],
   }),
@@ -70,7 +70,7 @@ function ContactPage() {
 
               <div className="overflow-hidden rounded-3xl border border-gold/20">
                 <iframe
-                  title="We Will Fix It - Dubai Investments Park"
+                  title="Eurots Dubai - Dubai Investments Park"
                   src="https://www.google.com/maps?q=Dubai+Investments+Park+Plot+194&output=embed"
                   width="100%"
                   height="280"

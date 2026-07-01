@@ -5,9 +5,9 @@ import { getService } from "@/lib/services";
 export const Route = createFileRoute("/services/drainage")({
   head: () => ({
     meta: [
-      { title: "Drainage Services · We Will Fix It Dubai" },
+      { title: "Drainage Services · Eurots Dubai Dubai" },
       { name: "description", content: "Dubai drainage specialists: high-pressure jetting, CCTV surveys, blockage clearance and odour treatment for residential and commercial properties." },
-      { property: "og:title", content: "Drainage Services · We Will Fix It Dubai" },
+      { property: "og:title", content: "Drainage Services · Eurots Dubai Dubai" },
       { property: "og:description", content: "Dubai drainage specialists: high-pressure jetting, CCTV surveys, blockage clearance and odour treatment for residential and commercial properties." },
     ],
   }),

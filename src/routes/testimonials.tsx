@@ -7,8 +7,8 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Testimonials · We Will Fix It Dubai" },
-      { name: "description", content: "Real customer reviews from Google for We Will Fix It — Dubai's most trusted maintenance company." },
+      { title: "Testimonials · Eurots Dubai Dubai" },
+      { name: "description", content: "Real customer reviews from Google for Eurots Dubai — Dubai's most trusted maintenance company." },
     ],
   }),
   component: TestimonialsPage,

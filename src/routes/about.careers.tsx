@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/about/careers")({
   head: () => ({
     meta: [
-      { title: "Careers · We Will Fix It Dubai" },
+      { title: "Careers · Eurots Dubai Dubai" },
       { name: "description", content: "Join Dubai's largest independent home maintenance company. Current vacancies for AC Technicians, Plumbers and Drivers." },
     ],
   }),
@@ -39,7 +39,7 @@ const vacancies = [
   {
     title: "Driver / Helper",
     type: "Full-time · Dubai",
-    summary: "We Will Fix It operates a fleet of more than 50 vehicles. We are recruiting drivers to support our technician teams, transport materials and provide on-site assistance.",
+    summary: "Eurots Dubai operates a fleet of more than 50 vehicles. We are recruiting drivers to support our technician teams, transport materials and provide on-site assistance.",
     bullets: [
       "Valid UAE manual driving licence (mandatory)",
       "Clean driving record",
@@ -62,7 +62,7 @@ function CareersPage() {
           <Reveal delay={0.2}><div className="mt-8 gold-rule w-24" /></Reveal>
           <Reveal delay={0.25}>
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-cream/75">
-              We Will Fix It is one of Dubai's largest independent maintenance employers. We invest in our technicians — proper tools, proper training, proper pay — and we look for people who take pride in their work and care about the customer experience.
+              Eurots Dubai is one of Dubai's largest independent maintenance employers. We invest in our technicians — proper tools, proper training, proper pay — and we look for people who take pride in their work and care about the customer experience.
             </p>
           </Reveal>
         </div>

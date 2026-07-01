@@ -5,9 +5,9 @@ import { getService } from "@/lib/services";
 export const Route = createFileRoute("/services/pools")({
   head: () => ({
     meta: [
-      { title: "Pools & Waterproofing · We Will Fix It Dubai" },
+      { title: "Pools & Waterproofing · Eurots Dubai Dubai" },
       { name: "description", content: "Pool servicing, equipment repair and full waterproofing of balconies, bathrooms and roofs across Dubai. Up to 5-year workmanship warranty." },
-      { property: "og:title", content: "Pools & Waterproofing · We Will Fix It Dubai" },
+      { property: "og:title", content: "Pools & Waterproofing · Eurots Dubai Dubai" },
       { property: "og:description", content: "Pool servicing, equipment repair and full waterproofing of balconies, bathrooms and roofs across Dubai. Up to 5-year workmanship warranty." },
     ],
   }),

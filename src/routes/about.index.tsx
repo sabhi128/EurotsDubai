@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/about/")({
   head: () => ({
     meta: [
-      { title: "Our Story · We Will Fix It Dubai" },
+      { title: "Our Story · Eurots Dubai Dubai" },
       { name: "description", content: "How British expats Colin Thomas and Dan Garner built Dubai's most trusted independent home maintenance company since 2008." },
     ],
   }),
@@ -51,7 +51,7 @@ function OurStoryPage() {
           <div className="mt-10 space-y-6 text-lg leading-relaxed text-ink/80">
             <Reveal delay={0.1}>
               <p>
-                We Will Fix It was founded in 2008 by Colin Thomas and Dan Garner — two British expats frustrated by the standard of home maintenance available in Dubai at the time. Promises were made and rarely kept; jobs were patched, not fixed; quotes were vague and warranties non-existent. They believed Dubai deserved better.
+                Eurots Dubai was founded in 2008 by Colin Thomas and Dan Garner — two British expats frustrated by the standard of home maintenance available in Dubai at the time. Promises were made and rarely kept; jobs were patched, not fixed; quotes were vague and warranties non-existent. They believed Dubai deserved better.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
@@ -66,12 +66,12 @@ function OurStoryPage() {
             </Reveal>
             <Reveal delay={0.25}>
               <p>
-                Today We Will Fix It services every major community in Dubai — Arabian Ranches, Emirates Hills, Palm Jumeirah, Dubai Hills, Downtown, Jumeirah, the Springs, the Meadows and beyond — and provides the same level of service to villas, apartments, restaurants, offices and retail spaces. Our 24-hour customer-care centre means that whether your AC fails at midnight or your kitchen floods at sunrise, a real person picks up the phone, and a real team is on its way.
+                Today Eurots Dubai services every major community in Dubai — Arabian Ranches, Emirates Hills, Palm Jumeirah, Dubai Hills, Downtown, Jumeirah, the Springs, the Meadows and beyond — and provides the same level of service to villas, apartments, restaurants, offices and retail spaces. Our 24-hour customer-care centre means that whether your AC fails at midnight or your kitchen floods at sunrise, a real person picks up the phone, and a real team is on its way.
               </p>
             </Reveal>
             <Reveal delay={0.3}>
               <p>
-                After more than 15 years, 400,000+ completed jobs and tens of thousands of happy customers, our promise is still the simplest one in the industry: <span className="font-semibold text-emerald-deep">we will fix it</span>.
+                After more than 15 years, 400,000+ completed jobs and tens of thousands of happy customers, our promise is still the simplest one in the industry: <span className="font-semibold text-emerald-deep">eurots dubai</span>.
               </p>
             </Reveal>
           </div>

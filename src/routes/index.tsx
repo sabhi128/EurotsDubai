@@ -11,9 +11,9 @@ import { Reveal } from "@/components/ui/Reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "We Will Fix It · Dubai's Most Trusted Home Maintenance" },
+      { title: "Eurots Dubai · Dubai's Most Trusted Home Maintenance" },
       { name: "description", content: "The largest independent home maintenance company in Dubai. AC, electrical, plumbing, painting, carpentry, drainage and pool services. Rated from 2,000+ reviews." },
-      { property: "og:title", content: "We Will Fix It · Dubai Home Maintenance" },
+      { property: "og:title", content: "Eurots Dubai · Dubai Home Maintenance" },
       { property: "og:description", content: "One call. One team. Every fix in your Dubai home — done first time, with warranty in writing." },
     ],
   }),
