@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook, Linkedin } from "lucide-react";
 import { services } from "@/lib/services";
 import { site } from "@/lib/site";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -9,9 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <span className="font-display text-2xl font-extrabold text-cream">
-              We Will <span className="text-gold">Fix It</span>
-            </span>
+            <img src={logo} alt="Eurots Dubai" className="h-14 w-auto" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/70">
               The largest and most trusted independent home maintenance company in Dubai. Operating since 2008.
             </p>

@@ -15,6 +15,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompareRouteImport } from './routes/compare'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutIndexRouteImport } from './routes/about.index'
 import { Route as ServicesPoolsRouteImport } from './routes/services.pools'
 import { Route as ServicesPlumbingRouteImport } from './routes/services.plumbing'
 import { Route as ServicesPaintingRouteImport } from './routes/services.painting'
@@ -57,6 +58,11 @@ const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AboutIndexRoute = AboutIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AboutRoute,
 } as any)
 const ServicesPoolsRoute = ServicesPoolsRouteImport.update({
   id: '/services/pools',
@@ -140,10 +146,10 @@ export interface FileRoutesByFullPath {
   '/services/painting': typeof ServicesPaintingRoute
   '/services/plumbing': typeof ServicesPlumbingRoute
   '/services/pools': typeof ServicesPoolsRoute
+  '/about/': typeof AboutIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRouteWithChildren
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
@@ -160,6 +166,7 @@ export interface FileRoutesByTo {
   '/services/painting': typeof ServicesPaintingRoute
   '/services/plumbing': typeof ServicesPlumbingRoute
   '/services/pools': typeof ServicesPoolsRoute
+  '/about': typeof AboutIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -181,6 +188,7 @@ export interface FileRoutesById {
   '/services/painting': typeof ServicesPaintingRoute
   '/services/plumbing': typeof ServicesPlumbingRoute
   '/services/pools': typeof ServicesPoolsRoute
+  '/about/': typeof AboutIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -203,10 +211,10 @@ export interface FileRouteTypes {
     | '/services/painting'
     | '/services/plumbing'
     | '/services/pools'
+    | '/about/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/about'
     | '/compare'
     | '/contact'
     | '/faq'
@@ -223,6 +231,7 @@ export interface FileRouteTypes {
     | '/services/painting'
     | '/services/plumbing'
     | '/services/pools'
+    | '/about'
   id:
     | '__root__'
     | '/'
@@ -243,6 +252,7 @@ export interface FileRouteTypes {
     | '/services/painting'
     | '/services/plumbing'
     | '/services/pools'
+    | '/about/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -307,6 +317,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/about/': {
+      id: '/about/'
+      path: '/'
+      fullPath: '/about/'
+      preLoaderRoute: typeof AboutIndexRouteImport
+      parentRoute: typeof AboutRoute
     }
     '/services/pools': {
       id: '/services/pools'
@@ -398,11 +415,13 @@ declare module '@tanstack/react-router' {
 interface AboutRouteChildren {
   AboutCareersRoute: typeof AboutCareersRoute
   AboutTeamRoute: typeof AboutTeamRoute
+  AboutIndexRoute: typeof AboutIndexRoute
 }
 
 const AboutRouteChildren: AboutRouteChildren = {
   AboutCareersRoute: AboutCareersRoute,
   AboutTeamRoute: AboutTeamRoute,
+  AboutIndexRoute: AboutIndexRoute,
 }
 
 const AboutRouteWithChildren = AboutRoute._addFileChildren(AboutRouteChildren)

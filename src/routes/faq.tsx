@@ -8,7 +8,7 @@ import { faqCategories } from "@/lib/faqs";
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ · We Will Fix It Dubai" },
+      { title: "FAQ · Eurots Dubai Dubai" },
       { name: "description", content: "Answers on AC servicing, duct cleaning, coil cleaning, plumbing, electrical, painting, water tank cleaning and more." },
     ],
   }),

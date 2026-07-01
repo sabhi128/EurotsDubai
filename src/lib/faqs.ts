@@ -1,4 +1,4 @@
-// All FAQ content verbatim from wewillfixit.com (light formatting cleanup only).
+// All FAQ content verbatim from eurotsdubai.com (light formatting cleanup only).
 export type FAQ = { q: string; a: string };
 export type FAQCategory = { title: string; items: FAQ[] };
 
@@ -87,7 +87,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         q: "What type of duct cleaning is best?",
-        a: "For professional duct cleaning We Will Fix It uses Rotobrush equipment operated by specially trained technicians. This method loosens up more dirt and debris than many alternatives due to its accelerated spin cycle. In addition, it enables packed dirt and mould removal using a high-powered industrial vacuum at source, preventing contamination. Antibacterial fogging is one of the final steps in our duct cleaning process to kill any remaining bacteria within the ducts.",
+        a: "For professional duct cleaning Eurots Dubai uses Rotobrush equipment operated by specially trained technicians. This method loosens up more dirt and debris than many alternatives due to its accelerated spin cycle. In addition, it enables packed dirt and mould removal using a high-powered industrial vacuum at source, preventing contamination. Antibacterial fogging is one of the final steps in our duct cleaning process to kill any remaining bacteria within the ducts.",
       },
       {
         q: "When should I get my AC ducts cleaned?",
@@ -95,7 +95,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         q: "How long does duct cleaning take?",
-        a: "Professional duct cleaning should take approximately 1.5 hrs per AC unit, depending on the length of the duct. We Will Fix It uses Rotobrush equipment with powerful suction, meaning less mess and less disruption for your family. Cleaning of the area and any paint retouches are provided free of charge by We Will Fix It.",
+        a: "Professional duct cleaning should take approximately 1.5 hrs per AC unit, depending on the length of the duct. Eurots Dubai uses Rotobrush equipment with powerful suction, meaning less mess and less disruption for your family. Cleaning of the area and any paint retouches are provided free of charge by Eurots Dubai.",
       },
     ],
   },
@@ -108,7 +108,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         q: "How much does it cost to clean AC coils?",
-        a: "The cost of your AC coil cleaning depends on the number of AC units you have in your home, and the ease of accessing your AC coils. Many coils in the UAE are located inside the ceiling with limited access. We Will Fix It coil cleaning ranges between AED 850 and AED 1,450 per unit and ceiling repair work is additionally AED 225 per hour + materials (all charges + 5% VAT). If a ceiling cut is necessary to ensure AC effectiveness, we provide seamless repair as standard.",
+        a: "The cost of your AC coil cleaning depends on the number of AC units you have in your home, and the ease of accessing your AC coils. Many coils in the UAE are located inside the ceiling with limited access. Eurots Dubai coil cleaning ranges between AED 850 and AED 1,450 per unit and ceiling repair work is additionally AED 225 per hour + materials (all charges + 5% VAT). If a ceiling cut is necessary to ensure AC effectiveness, we provide seamless repair as standard.",
       },
       {
         q: "How often should you clean coils on an AC unit?",
@@ -125,7 +125,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         q: "How do I contact electrical service providers in an emergency?",
-        a: "Electrical services are in high demand, so while We Will Fix It will do its best to fit in emergencies, the best way to guarantee emergency response is to take an annual contract where the 90-minute emergency response is guaranteed at any time of day or night.",
+        a: "Electrical services are in high demand, so while Eurots Dubai will do its best to fit in emergencies, the best way to guarantee emergency response is to take an annual contract where the 90-minute emergency response is guaranteed at any time of day or night.",
       },
       {
         q: "Are your electricians licensed and insured?",
@@ -149,8 +149,8 @@ export const faqCategories: FAQCategory[] = [
         a: "Some newer developments have one single large solar water heater on the roof; many apartments and older villas have multiple heaters, while some shared developments operate from just one larger heater that serves the community. If a water heater leaks it can ruin your ceiling and lead to further damage to your property, so always inspect for signs of rust and contact a professional at the first sign of trouble.",
       },
       {
-        q: "Does We Will Fix It offer any warranties on its plumbing services?",
-        a: "We Will Fix It has a 12-month warranty on parts provided and installed by us.",
+        q: "Does Eurots Dubai offer any warranties on its plumbing services?",
+        a: "Eurots Dubai has a 12-month warranty on parts provided and installed by us.",
       },
       {
         q: "What are the signs of a hidden water leak?",
@@ -170,7 +170,7 @@ export const faqCategories: FAQCategory[] = [
         a: "Painting service providers should give you the option to either request particular paint colours and grades, or to opt to provide it yourself. WWFI can match up or provide paint codes for standard colours used by large-scale developers such as Emaar & Nakheel.",
       },
       {
-        q: "What does We Will Fix It's painting service cover?",
+        q: "What does Eurots Dubai's painting service cover?",
         a: "We take care of all the preparation you need. Our technicians will take down your curtains, blinds & pictures, lay painter's tape and protect your furniture & floors with professional-grade protective materials. Everything will be cleaned up and returned to its rightful place.",
       },
     ],

@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export const Route = createFileRoute("/about/team")({
   head: () => ({
     meta: [
-      { title: "Meet the Team · We Will Fix It Dubai" },
+      { title: "Meet the Team · Eurots Dubai Dubai" },
       { name: "description", content: "The leadership team behind Dubai's largest independent home maintenance company." },
     ],
   }),
@@ -17,12 +17,12 @@ const founders: Person[] = [
   {
     name: "Colin Thomas",
     role: "Co-Founder & Managing Director",
-    bio: "Colin co-founded We Will Fix It in 2008 after years of frustration with the standard of home maintenance available in Dubai. He set the company's founding principles — turn up on time, fix it first time, stand behind every part — and they still guide every job we do today.",
+    bio: "Colin co-founded Eurots Dubai in 2008 after years of frustration with the standard of home maintenance available in Dubai. He set the company's founding principles — turn up on time, fix it first time, stand behind every part — and they still guide every job we do today.",
   },
   {
     name: "Dan Garner",
     role: "Co-Founder & Operations Director",
-    bio: "Dan oversees field operations across every We Will Fix It team. From technician training to fleet logistics and the 24-hour customer-care centre, his focus is making sure the experience our customers receive in the home matches the promise they hear on the phone.",
+    bio: "Dan oversees field operations across every Eurots Dubai team. From technician training to fleet logistics and the 24-hour customer-care centre, his focus is making sure the experience our customers receive in the home matches the promise they hear on the phone.",
   },
 ];
 

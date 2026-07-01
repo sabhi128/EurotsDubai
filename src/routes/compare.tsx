@@ -5,8 +5,8 @@ import { Check, X } from "lucide-react";
 export const Route = createFileRoute("/compare")({
   head: () => ({
     meta: [
-      { title: "How We Compare · We Will Fix It Dubai" },
-      { name: "description", content: "How We Will Fix It compares to other maintenance providers in Dubai — warranties, response times, technicians and accountability." },
+      { title: "How We Compare · Eurots Dubai Dubai" },
+      { name: "description", content: "How Eurots Dubai compares to other maintenance providers in Dubai — warranties, response times, technicians and accountability." },
     ],
   }),
   component: ComparePage,
@@ -50,7 +50,7 @@ function ComparePage() {
           <Reveal delay={0.2}><div className="mt-8 gold-rule w-24" /></Reveal>
           <Reveal delay={0.25}>
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-cream/75">
-              Here's how We Will Fix It compares to typical home maintenance providers in Dubai — feature by feature.
+              Here's how Eurots Dubai compares to typical home maintenance providers in Dubai — feature by feature.
             </p>
           </Reveal>
         </div>
@@ -62,7 +62,7 @@ function ComparePage() {
             <div className="overflow-hidden rounded-3xl border border-emerald-deep/10 bg-cream shadow-[var(--shadow-soft)]">
               <div className="grid grid-cols-[1.5fr_1fr_1fr] bg-emerald-deep text-cream">
                 <div className="px-6 py-5 text-xs uppercase tracking-[0.25em] text-cream/70">Feature</div>
-                <div className="px-6 py-5 text-xs uppercase tracking-[0.25em] text-gold">We Will Fix It</div>
+                <div className="px-6 py-5 text-xs uppercase tracking-[0.25em] text-gold">Eurots Dubai</div>
                 <div className="px-6 py-5 text-xs uppercase tracking-[0.25em] text-cream/50">Typical provider</div>
               </div>
               {rows.map((r, i) => (

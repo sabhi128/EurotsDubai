@@ -1,7 +1,7 @@
-// Central site/business info. All values verbatim from wewillfixit.com.
+// Central site/business info. All values verbatim from eurotsdubai.com.
 export const site = {
-  name: "We Will Fix It",
-  legalName: "WE WILL FIX IT SERVICES LLC",
+  name: "Eurots Dubai",
+  legalName: "EUROTS DUBAI SERVICES LLC",
   tagline: "The largest & most trusted independent maintenance company in Dubai",
   established: 2008,
   phoneDisplay: "04 807 3295",
@@ -11,8 +11,8 @@ export const site = {
   whatsappDisplay: "+971 50 102 7586",
   whatsappHref: "https://wa.me/971501027586",
   whatsappNumber: "971501027586",
-  email: "info@wewillfixit.com",
-  emailHref: "mailto:info@wewillfixit.com",
+  email: "info@eurotsdubai.com",
+  emailHref: "mailto:info@eurotsdubai.com",
   address: {
     line1: "Phase 1 – Plot 194",
     line2: "Dubai Investments Park – Dubai",

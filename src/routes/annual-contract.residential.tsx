@@ -6,7 +6,7 @@ import { BookingForm } from "@/components/site/BookingForm";
 export const Route = createFileRoute("/annual-contract/residential")({
   head: () => ({
     meta: [
-      { title: "Residential Annual Maintenance Contracts · We Will Fix It Dubai" },
+      { title: "Residential Annual Maintenance Contracts · Eurots Dubai Dubai" },
       { name: "description", content: "All-trades annual maintenance contracts for villas and apartments — priority bookings, 90-minute emergency response and one team for everything." },
     ],
   }),

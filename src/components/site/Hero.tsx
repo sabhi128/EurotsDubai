@@ -86,7 +86,7 @@ export function Hero() {
           <motion.img
             style={{ y: imgY }}
             src={heroImg}
-            alt="We Will Fix It technician at work in a Dubai villa"
+            alt="Eurots Dubai technician at work in a Dubai villa"
             width={1280}
             height={1536}
             className="absolute inset-0 size-full object-cover scale-110"

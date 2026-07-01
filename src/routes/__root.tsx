@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "We Will Fix It · Dubai's Most Trusted Home Maintenance" },
+      { title: "Eurots Dubai · Dubai's Most Trusted Home Maintenance" },
       { name: "description", content: "Dubai's largest independent home maintenance company since 2008. AC, electrical, plumbing, handyman, carpentry, drainage, painting, pools & waterproofing." },
-      { name: "author", content: "We Will Fix It" },
-      { property: "og:title", content: "We Will Fix It · Dubai Home Maintenance" },
+      { name: "author", content: "Eurots Dubai" },
+      { property: "og:title", content: "Eurots Dubai · Dubai Home Maintenance" },
       { property: "og:description", content: "One call. One team. Every fix in your Dubai home — done first time, with warranty in writing." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@WeWillFixIt" },
+      { name: "twitter:site", content: "@eurotsdubai" },
     ],
     links: [
       {

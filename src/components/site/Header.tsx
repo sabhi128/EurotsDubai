@@ -4,6 +4,7 @@ import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
 import { services } from "@/lib/services";
 import { site } from "@/lib/site";
+import logo from "@/assets/logo.png";
 
 const navServiceLinks = services.map((s) => ({
   to: `/services/${s.slug}` as const,
@@ -75,10 +76,8 @@ export function Header() {
         className="fixed top-0 inset-x-0 z-50 border-b border-gold/15"
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-10">
-          <Link to="/" className="group flex items-baseline gap-2">
-            <span className="font-display text-xl font-extrabold tracking-tight text-cream">
-              We Will <span className="text-gold">Fix It</span>
-            </span>
+          <Link to="/" className="group flex items-center gap-3">
+            <img src={logo} alt="Eurots Dubai" className="h-10 w-auto md:h-11" />
             <span className="hidden text-[10px] uppercase tracking-[0.25em] text-cream/50 group-hover:text-gold/80 transition-colors md:inline">
               Est. 2008
             </span>
@@ -120,7 +119,7 @@ export function Header() {
         className="fixed inset-0 z-[60] bg-emerald-deep/95 backdrop-blur-xl"
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-gold/20">
-          <span className="font-display text-xl font-extrabold text-cream">We Will <span className="text-gold">Fix It</span></span>
+          <img src={logo} alt="Eurots Dubai" className="h-9 w-auto" />
           <button aria-label="Close" onClick={() => setMobileOpen(false)} className="rounded-full border border-cream/15 p-2 text-cream">
             <X className="size-5" />
           </button>

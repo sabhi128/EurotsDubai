@@ -1,4 +1,4 @@
-// Real Google reviews pulled verbatim from wewillfixit.com (June 2026 snapshot).
+// Real Google reviews pulled verbatim from eurotsdubai.com (June 2026 snapshot).
 export type Review = {
   name: string;
   date: string;
@@ -10,12 +10,12 @@ export const reviews: Review[] = [
   {
     name: "Saleh",
     date: "June 27, 2026",
-    text: "We Will Fix It is a professional house maintenance company with skilled technicians and highly recommended",
+    text: "Eurots Dubai is a professional house maintenance company with skilled technicians and highly recommended",
   },
   {
     name: "Eduardo Rodriguez Sanchez",
     date: "June 26, 2026",
-    text: "I called WeWillFixIt for a quick check and fix on electrical issues and Meliton and Louis came (on time as usual) and delivered an outstanding job. Super efficient and clean work delivered. We will keep booking services with them. Today one AC unit stopped working and within 2-3 hours Andrew and Reymon came and fix it in less than 30 mins. Honestly, I cannot recommend better company to work with. Once again super professional and extremely efficient.",
+    text: "I called eurotsdubai for a quick check and fix on electrical issues and Meliton and Louis came (on time as usual) and delivered an outstanding job. Super efficient and clean work delivered. We will keep booking services with them. Today one AC unit stopped working and within 2-3 hours Andrew and Reymon came and fix it in less than 30 mins. Honestly, I cannot recommend better company to work with. Once again super professional and extremely efficient.",
   },
   {
     name: "Aibel Gutierrez",
@@ -30,7 +30,7 @@ export const reviews: Review[] = [
   {
     name: "Eileen",
     date: "June 24, 2026",
-    text: "Another great job by WeWillFixIt. Happy with the service and quality by Marlin and Ryan.",
+    text: "Another great job by eurotsdubai. Happy with the service and quality by Marlin and Ryan.",
   },
   {
     name: "Mashael Alshammari",
@@ -46,7 +46,7 @@ export const reviews: Review[] = [
   {
     name: "Peter Cherry",
     date: "June 20, 2026",
-    text: "We've just had the team from We Will Fix It – Ryan, Paul and Marlon – complete the second stage of our apartment's AC cleaning, and they were fantastic from start to finish. They arrived right on time, carefully protected the apartment with plastic coverings, and then got straight to work cleaning the AC ducts. They also took before-and-after photos, and the difference was genuinely impressive. The whole team was professional, friendly and took great pride in their work. We'll definitely be calling them again for future servicing. If you're looking for reliable home maintenance services in Dubai, make We Will Fix It your go-to team. You won't be disappointed.",
+    text: "We've just had the team from Eurots Dubai – Ryan, Paul and Marlon – complete the second stage of our apartment's AC cleaning, and they were fantastic from start to finish. They arrived right on time, carefully protected the apartment with plastic coverings, and then got straight to work cleaning the AC ducts. They also took before-and-after photos, and the difference was genuinely impressive. The whole team was professional, friendly and took great pride in their work. We'll definitely be calling them again for future servicing. If you're looking for reliable home maintenance services in Dubai, make Eurots Dubai your go-to team. You won't be disappointed.",
   },
   {
     name: "John Stewart",
@@ -71,7 +71,7 @@ export const reviews: Review[] = [
   {
     name: "Linda Kjær Hansen",
     date: "Featured customer story",
-    text: "By far the most reliable maintenance company we have come across in Dubai to date… And we have been through a few! We Will Fix It tell it like it is and work in long term solutions with original parts – not dumping costs by using cheaper materials, repairing with duct tape or cutting corners. Compared with other companies some of their prices are higher, true. But what you get are trained specialists in their field, well worth the money spent. On top of everything, the teams we have encountered via telephone and in our home are polite, competent and professional. I highly recommend \"We Will Fix It\" to anyone struggling to find a good house maintenance company. In fact; I can't recommend them enough.",
+    text: "By far the most reliable maintenance company we have come across in Dubai to date… And we have been through a few! Eurots Dubai tell it like it is and work in long term solutions with original parts – not dumping costs by using cheaper materials, repairing with duct tape or cutting corners. Compared with other companies some of their prices are higher, true. But what you get are trained specialists in their field, well worth the money spent. On top of everything, the teams we have encountered via telephone and in our home are polite, competent and professional. I highly recommend \"Eurots Dubai\" to anyone struggling to find a good house maintenance company. In fact; I can't recommend them enough.",
   },
   {
     name: "Sebastian Le",
