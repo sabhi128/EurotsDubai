@@ -15,9 +15,20 @@ export function Footer() {
               The largest and most trusted independent home maintenance company in Dubai. Operating since 2008.
             </p>
             <div className="mt-6 flex gap-3">
-              {[Instagram, Facebook, Linkedin].map((I, i) => (
-                <a key={i} href="#" aria-label="social" className="rounded-full border border-gold/25 p-2.5 text-cream/80 hover:bg-gold hover:text-ink transition-colors">
-                  <I className="size-4" />
+              {[
+                { Icon: Instagram, href: site.socials.instagram, label: "Instagram" },
+                { Icon: Facebook, href: site.socials.facebook, label: "Facebook" },
+                { Icon: Linkedin, href: site.socials.linkedin, label: "LinkedIn" },
+              ].map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="rounded-full border border-gold/25 p-2.5 text-cream/80 hover:bg-gold hover:text-ink transition-colors"
+                >
+                  <Icon className="size-4" />
                 </a>
               ))}
             </div>
