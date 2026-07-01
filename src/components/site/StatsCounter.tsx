@@ -30,8 +30,8 @@ export function StatsCounter() {
 
         <Stagger className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-ink/10 lg:grid-cols-5">
           {stats.map((s) => (
-            <motion.div key={s.label} variants={staggerItem} className="bg-cream p-8 lg:p-10">
-              <div className="font-display text-5xl font-extrabold text-emerald-deep lg:text-6xl">
+            <motion.div key={s.label} variants={staggerItem} className="bg-cream p-6 md:p-8 lg:px-3 lg:py-8 xl:px-6 xl:py-10">
+              <div className="font-display text-4xl font-extrabold tracking-tight text-emerald-deep md:text-5xl lg:text-[2.25rem] xl:text-5xl xl:tracking-normal whitespace-nowrap">
                 <AnimatedCounter to={s.value} suffix={s.suffix} />
               </div>
               <div className="mt-3 gold-rule w-12" />
