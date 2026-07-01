@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { MagneticLink } from "@/components/ui/MagneticButton";
 import { Phone, ArrowRight } from "lucide-react";
+import { site } from "@/lib/site";
 
 export function CTABand() {
   return (
@@ -26,8 +27,8 @@ export function CTABand() {
                 <MagneticLink to="/annual-contract/residential">
                   Get a quote <ArrowRight className="size-4" />
                 </MagneticLink>
-                <a href="tel:+97144471444" className="inline-flex items-center gap-2 text-sm text-cream/70 hover:text-gold transition-colors">
-                  <Phone className="size-4" /> +971 4 447 1444
+                <a href={site.phoneHref} className="inline-flex items-center gap-2 text-sm text-cream/70 hover:text-gold transition-colors">
+                  <Phone className="size-4" /> {site.phoneDisplay}
                 </a>
               </div>
             </div>
