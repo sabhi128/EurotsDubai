@@ -50,4 +50,9 @@ export const site = {
     "Water Tank Cleaning",
     "Other",
   ],
+  socials: {
+    instagram: "https://www.instagram.com/",
+    facebook: "https://www.facebook.com/",
+    linkedin: "https://www.linkedin.com/",
+  },
 };
