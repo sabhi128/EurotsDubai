@@ -3,22 +3,24 @@ import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 
 const bookingInputSchema = z.object({
-  first_name: z.string(),
-  last_name: z.string(),
-  email: z.string(),
-  phone: z.string().nullish(),
-  service: z.string(),
-  details: z.string().nullish(),
-  source: z.string().nullish(),
+  data: z.object({
+    first_name: z.string(),
+    last_name: z.string(),
+    email: z.string(),
+    phone: z.string().nullish(),
+    service: z.string(),
+    details: z.string().nullish(),
+    source: z.string().nullish(),
+  })
 });
 
 export type BookingInput = z.infer<typeof bookingInputSchema>;
 
 export const submitBooking = createServerFn({ method: "POST" })
-  .validator((input: any) => input)
-  .handler(async (ctx: any) => {
-    // In some TanStack Start versions, the payload is in ctx.data, in others it is ctx itself
-    const input = ctx?.data || ctx;
+  .validator(bookingInputSchema)
+  .handler(async ({ data }) => {
+    // Extract the inner data object
+    const input = data.data;
     console.log("Server function input received:", input);
     
     if (!input || typeof input !== "object") {

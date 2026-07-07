@@ -21,13 +21,15 @@ export function BookingForm({ source, defaultService, variant = "card" }: Props)
     const f = new FormData(e.currentTarget);
     try {
       await submitBooking({
-        first_name: String(f.get("first_name") || ""),
-        last_name: String(f.get("last_name") || ""),
-        email: String(f.get("email") || ""),
-        phone: String(f.get("phone") || ""),
-        service: String(f.get("service") || ""),
-        details: String(f.get("details") || ""),
-        source,
+        data: {
+          first_name: String(f.get("first_name") || ""),
+          last_name: String(f.get("last_name") || ""),
+          email: String(f.get("email") || ""),
+          phone: String(f.get("phone") || ""),
+          service: String(f.get("service") || ""),
+          details: String(f.get("details") || ""),
+          source,
+        }
       });
       setStatus("done");
       (e.target as HTMLFormElement).reset();
