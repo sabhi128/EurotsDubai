@@ -17,10 +17,9 @@ export type BookingInput = z.infer<typeof bookingInputSchema>;
 export const submitBooking = createServerFn({ method: "POST" })
   .validator((input: any) => input)
   .handler(async (ctx: any) => {
-    console.log("Server function ctx received:", JSON.stringify(ctx));
-    
     // In some TanStack Start versions, the payload is in ctx.data, in others it is ctx itself
     const input = ctx?.data || ctx;
+    console.log("Server function input received:", input);
     
     if (!input || typeof input !== "object") {
       console.error("Payload is missing or invalid on the server:", input);
