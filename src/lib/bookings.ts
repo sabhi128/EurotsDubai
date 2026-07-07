@@ -1,18 +1,21 @@
 import { createServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
 
-export type BookingInput = {
-  first_name: string;
-  last_name: string;
-  email: string;
-  phone?: string;
-  service: string;
-  details?: string;
-  source?: string;
-};
+const bookingInputSchema = z.object({
+  first_name: z.string(),
+  last_name: z.string(),
+  email: z.string(),
+  phone: z.string().nullish(),
+  service: z.string(),
+  details: z.string().nullish(),
+  source: z.string().nullish(),
+});
+
+export type BookingInput = z.infer<typeof bookingInputSchema>;
 
 export const submitBooking = createServerFn({ method: "POST" })
-  .validator((input: BookingInput) => input)
+  .validator(bookingInputSchema)
   .handler(async ({ data: input }) => {
     // 1. Insert into Supabase
     const { error } = await supabase.from("bookings").insert([
