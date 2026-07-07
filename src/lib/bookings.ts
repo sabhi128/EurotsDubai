@@ -15,16 +15,26 @@ const bookingInputSchema = z.object({
 export type BookingInput = z.infer<typeof bookingInputSchema>;
 
 export const submitBooking = createServerFn({ method: "POST" })
-  .validator(bookingInputSchema)
-  .handler(async ({ data: input }) => {
+  .validator((input: any) => input)
+  .handler(async (ctx: any) => {
+    console.log("Server function ctx received:", JSON.stringify(ctx));
+    
+    // In some TanStack Start versions, the payload is in ctx.data, in others it is ctx itself
+    const input = ctx?.data || ctx;
+    
+    if (!input || typeof input !== "object") {
+      console.error("Payload is missing or invalid on the server:", input);
+      throw new Error("Invalid payload: data is missing or undefined");
+    }
+
     // 1. Insert into Supabase
     const { error } = await supabase.from("bookings").insert([
       {
-        first_name: input.first_name.trim(),
-        last_name: input.last_name.trim(),
-        email: input.email.trim().toLowerCase(),
+        first_name: (input.first_name || "").trim(),
+        last_name: (input.last_name || "").trim(),
+        email: (input.email || "").trim().toLowerCase(),
         phone: input.phone?.trim() || null,
-        service: input.service,
+        service: input.service || "",
         details: input.details?.trim() || null,
         source: input.source || null,
       },
