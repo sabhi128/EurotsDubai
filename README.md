@@ -1,4 +1,4 @@
-# Fix It Luxe
+# EurotsDubai
 
 A premium home maintenance and luxury repair service platform designed with a modern, responsive, and high-end aesthetic. Built using **TanStack Start**, **React**, **Supabase**, and **Resend** for seamless, secure booking management and instant client communications.
 
